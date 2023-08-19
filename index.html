@@ -48,7 +48,7 @@
                         <div class="grid grid-flow-col gap-6 mt-10">
 
                             <!-- card 1 -->
-                            <div class="card w-60 bg-white shadow-lg p-2 rounded-lg">
+                            <div onclick="productValue(39)" class="card w-60 bg-white shadow-lg p-2 rounded-lg">
                                 <figure class="px-4 py-4 mb-5 bg-[#1111110d] rounded-lg">
                                     <img src="./images/prod1.png" alt="Shoes" class="" />
                                 </figure>
@@ -68,7 +68,7 @@
                             </div>
 
                             <!-- card 2 -->
-                            <div class="card w-60 bg-white shadow-lg p-2 rounded-lg">
+                            <div onclick="productValue(25)" class="card w-60 bg-white shadow-lg p-2 rounded-lg">
                                 <figure class="px-4 py-4 mb-5 bg-[#1111110d] rounded-lg">
                                     <img src="./images/prod2.png" alt="Shoes" class="" />
                                 </figure>
@@ -145,7 +145,7 @@
 
                         <!-- total counts -->
                         <div class="mb-6">
-                            <p>Total Price : <span class="text-[#11111180]">0.00</span> TK</p>
+                            <p>Total Price : <span id="totalPrice" class="text-[#11111180]">0.00</span> TK</p>
                             <p>Discount : <span class="text-[#11111180]">0.00</span> TK</p>
                             <p>Total : <span class="text-[#11111180]">0.00</span> TK</p>
 
@@ -166,7 +166,7 @@
 
     </main>
 
-
+<script src="./js/functions.js"></script>
 </body>
 
 </html>
