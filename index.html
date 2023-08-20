@@ -121,12 +121,15 @@
                     <!-- cupon part -->
                     <div class="bg-white p-6 rounded">
                         <h4 class="text-2xl font-medium mb-3">Have coupon?</h4>
-                        <div class="flex gap-0">
-                            <input
-                                class="rounded-l-lg text-xl py-3 pl-2 w-40 border-solid border-2 border-r-0 border-[#11111180]"
+                        <div class="flex justify-center items-center gap-0">
+                            <input id="cupon"
+                                class="rounded-l-lg text-xl py-2 pl-2 w-40 border-solid border-2 border-r-0 border-[#11111180]"
                                 type="text" placeholder="Coupon code">
-                            <button
-                                class="rounded-r-lg btn-primary py-2 px-3 bg-[#E527B2] text-2xl font-semibold border-0 text-white ">Apply</button>
+                            <button id="cuponButton" style="border-radius: 0px 50px 50px 0px ;"
+                                class="btn btn-primary py-2 px-3 bg-[#E527B2] text-2xl font-semibold border-0 text-white"
+                                disabled>
+                                Apply
+                            </button>
 
                         </div>
 
@@ -146,13 +149,14 @@
                         <!-- total counts -->
                         <div class="mb-6">
                             <p>Total Price : <span id="totalPrice" class="text-[#11111180]">0.00</span> TK</p>
-                            <p>Discount : <span class="text-[#11111180]">0.00</span> TK</p>
+                            <p>Discount : <span id="discountAmount" class="text-[#11111180]">0.00</span> TK</p>
                             <p>Total : <span class="text-[#11111180]">0.00</span> TK</p>
 
                         </div>
                         <hr class="mb-2">
                         <div class="text-center relative top-11">
-                            <button class="btn btn-primary bg-[#E527B2] text-lg font-semibold border-0 text-white">
+                            <button id="purchaseButton"
+                                class="btn btn-primary bg-[#E527B2] text-lg font-semibold border-0 text-white" disabled>
                                 Make Purchase
                             </button>
                         </div>
@@ -166,7 +170,7 @@
 
     </main>
 
-<script src="./js/functions.js"></script>
+    <script src="./js/functions.js"></script>
 </body>
 
 </html>
