@@ -20,7 +20,7 @@ function productCard(target) {
     li.innerText = liCount + ". " + itemName + " " + itemValue;
 
 
-    console.log(liCount);
+    // console.log(liCount);
     iteamUpdate.appendChild(li);
 
     // console.log(total , itemValue);
@@ -29,6 +29,55 @@ function productCard(target) {
 
     // set the total value as text in total 
     document.getElementById('totalPrice').innerText = total;
+
+    //------ final total -----------
+    const finalTotal = document.getElementById('finalTotal');
+    finalTotal.innerText = total;
+    //  console.log(finalTotalValue);
+    // --------------------------
+
+
+    //-------purchase button enabled--------- 
+    if (total > 0) {
+        document.getElementById("purchaseButton").disabled = false;
+
+    }
+
+    // -------- discount part ----------
+
+    if (total >= 200) {
+        document.getElementById("cuponButton").disabled = false;
+        document.getElementById('cuponButton').addEventListener('click', function () {
+            const cupon = document.getElementById('cupon');
+            const cuponText = cupon.value;
+
+
+            if (cuponText == 'SELL20') {
+                const discountValue = 20 * total / 100;
+
+                // set the discount value
+                const discountText = document.getElementById('discountAmount');
+                discountText.innerText = discountValue;
+
+                // price after the discount
+                const priceAfterDiscount = total - discountValue;
+                finalTotal.innerText = priceAfterDiscount;
+
+            }
+            else {
+                console.log('invalid cupon');
+            }
+        })
+
+    }
+
+
+
+
+
+
+
+
 
 }
 
