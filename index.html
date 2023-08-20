@@ -48,7 +48,7 @@
                         <div class="grid grid-flow-col gap-6 mt-10">
 
                             <!-- card 1 -->
-                            <div onclick="productValue(39)" class="card w-60 bg-white shadow-lg p-2 rounded-lg">
+                            <div onclick="productCard(this)" class="card w-60 bg-white shadow-lg p-2 rounded-lg">
                                 <figure class="px-4 py-4 mb-5 bg-[#1111110d] rounded-lg">
                                     <img src="./images/prod1.png" alt="Shoes" class="" />
                                 </figure>
@@ -68,7 +68,7 @@
                             </div>
 
                             <!-- card 2 -->
-                            <div onclick="productValue(25)" class="card w-60 bg-white shadow-lg p-2 rounded-lg">
+                            <div onclick="productCard(this)" class="card w-60 bg-white shadow-lg p-2 rounded-lg">
                                 <figure class="px-4 py-4 mb-5 bg-[#1111110d] rounded-lg">
                                     <img src="./images/prod2.png" alt="Shoes" class="" />
                                 </figure>
@@ -88,7 +88,7 @@
                             </div>
 
                             <!-- card 3 -->
-                            <div class="card w-60 bg-white shadow-lg p-2 rounded-lg">
+                            <div onclick="productCard(this)" class="card w-60 bg-white shadow-lg p-2 rounded-lg">
                                 <figure class="px-4 py-4 mb-5 bg-[#1111110d] rounded-lg">
                                     <img src="./images/prod3.png" alt="Shoes" class="" />
                                 </figure>
@@ -138,19 +138,18 @@
                     <!-- purchase part -->
                     <div class="text-2xl font-medium bg-white mt-6 p-6 ">
                         <!-- purchase iteams -->
-                        <div class="mb-6">
-                            <p>1. Home Cooker</p>
-                            <p>2. Home Cooker</p>
-                            <p>3. Home Cooker</p>
+                        <ol id="createElement" class="mb-6">
 
-                        </div>
+
+
+                        </ol>
                         <hr class="mb-6">
 
                         <!-- total counts -->
                         <div class="mb-6">
                             <p>Total Price : <span id="totalPrice" class="text-[#11111180]">0.00</span> TK</p>
                             <p>Discount : <span id="discountAmount" class="text-[#11111180]">0.00</span> TK</p>
-                            <p>Total : <span class="text-[#11111180]">0.00</span> TK</p>
+                            <p>Total : <span id="finalTotal" class="text-[#11111180]">0.00</span> TK</p>
 
                         </div>
                         <hr class="mb-2">
@@ -170,7 +169,10 @@
 
     </main>
 
-    <script src="./js/functions.js"></script>
+    <!-- old js file stop -->
+    <!-- <script src="./js/functions.js"></script> -->
+
+    <script src="./js/document.js"></script>
 </body>
 
 </html>

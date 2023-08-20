@@ -46,10 +46,20 @@ function totalPriceMain(price) {
                 
                 // set the discount value
                 discountAmount.innerText = discount; 
+
             }
             else{
-                console.log('invalid cupon');
+                // alert('Invalid Cupon COde');
+                console.log('invalid');
+               
+               
             }
+
+            // call the total value
+            const finalTotalValue = document.getElementById('finalTotal');
+
+            console.log(finalTotalValue);
+            
         })
         
 
