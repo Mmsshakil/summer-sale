@@ -52,7 +52,7 @@ function productCard(target) {
             const cuponText = cupon.value;
 
 
-            if (cuponText == 'SELL20') {
+            if (cuponText == 'SELL200') {
                 const discountValue = 20 * total / 100;
 
                 // set the discount value
@@ -64,17 +64,10 @@ function productCard(target) {
                 finalTotal.innerText = priceAfterDiscount;
 
             }
-            else {
-                console.log('invalid cupon');
-            }
+         
         })
 
     }
-
-
-
-
-
 
 
 
