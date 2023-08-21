@@ -4,9 +4,10 @@ let total = 0;
 function productCard(target) {
     // console.log(target.childNodes[5].childNodes[1].innerText);
     const itemName = target.childNodes[5].childNodes[1].innerText;
-    // console.log(target.childNodes[5].childNodes[3].innerText.split(' ')[0]);
     const itemValue = target.childNodes[5].childNodes[3].innerText.split(' ')[0];
     // console.log(itemName, itemValue);
+    // console.log(target.childNodes[5].childNodes);
+
 
 
 
@@ -43,6 +44,9 @@ function productCard(target) {
 
     }
 
+    // alert part 
+    
+
     // -------- discount part ----------
 
     if (total >= 200) {
@@ -64,6 +68,12 @@ function productCard(target) {
                 finalTotal.innerText = priceAfterDiscount;
 
             }
+            
+            else{
+                return;
+                
+            }
+           
          
         })
 
