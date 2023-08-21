@@ -35,8 +35,9 @@ function totalPriceMain(price) {
             const cuponInput = document.getElementById('cupon');
             const cuponValue = cuponInput.value;
             // console.log(cuponValue);
+          
 
-            if(cuponValue == 'SELL200'){
+            if(cuponValue === 'SELL200'){
                 const discount = 20 * finalTotal / 100;
                 console.log('discount', discount);
 
@@ -49,11 +50,9 @@ function totalPriceMain(price) {
 
             }
             else{
-                // alert('Invalid Cupon COde');
-                console.log('invalid');
-               
-               
+                console.log("invalid");
             }
+                
 
             // call the total value
             const finalTotalValue = document.getElementById('finalTotal');

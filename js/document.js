@@ -56,7 +56,7 @@ function productCard(target) {
             const cuponText = cupon.value;
 
 
-            if (cuponText == 'SELL200') {
+            if (cuponText === 'SELL200') {
                 const discountValue = 20 * total / 100;
 
                 // set the discount value
@@ -70,7 +70,7 @@ function productCard(target) {
             }
             
             else{
-                return;
+                alert("Inavalid Cupon Code");
                 
             }
            
