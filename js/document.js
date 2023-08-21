@@ -45,7 +45,7 @@ function productCard(target) {
     }
 
     // alert part 
-    
+
 
     // -------- discount part ----------
 
@@ -55,6 +55,10 @@ function productCard(target) {
             const cupon = document.getElementById('cupon');
             const cuponText = cupon.value;
 
+            if (cuponText !== 'SELL200') {
+                alert("Inavalid Cupon Code");
+                cupon.value = "";
+            }
 
             if (cuponText === 'SELL200') {
                 const discountValue = 20 * total / 100;
@@ -68,13 +72,9 @@ function productCard(target) {
                 finalTotal.innerText = priceAfterDiscount;
 
             }
-            
-            else{
-                alert("Inavalid Cupon Code");
-                
-            }
-           
-         
+
+
+
         })
 
     }
