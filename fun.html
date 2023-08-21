@@ -1,0 +1,34 @@
+<!-- The button to open modal -->
+<a href="#my_modal_8" class="btn">open modal</a>
+<!-- Put this part before </body> tag -->
+<div class="modal" id="my_modal_8">
+    <div class="modal-box">
+        <h3 class="font-bold text-lg">Hello!</h3>
+        <p class="py-4">This modal works with anchor links</p>
+        <div class="modal-action">
+            <a href="#" class="btn">Yay!</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- The button to open modal -->
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
+
+
+
+
+<button id="purchaseButton" class="btn btn-primary bg-[#E527B2] text-lg font-semibold border-0 text-white" disabled>
+    Make Purchase
+</button>
